@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Corleone;
+    src: url('corleone/Corleone.ttf');
+}
+
+body {
+    font-family: Corleone;
+    font-size: 16px;
+    margin: 0;
+    /*background: #242830;*/
+}
+
+/* // ------------------- NAV -------------------\\ */
+
+.navigation {
+    font-size: 4em;
+    line-height: 0.9em;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #242830;
+}
+
+.navigation__items {
+    font-size: 2em;
+}
+
+/* // ------------------- INTRO -------------------\\ */
+
+.intro__wrap {
+    margin: 0;
+}
+
+.intro__picture {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.intro__picture-content {
+    position: absolute;
+    z-index: 0;
+    color: white;
+    left: 20%;
+    bottom: 20%;
+    font-size: 5vh;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.section-container {
+    background-image: url("../img/Designed_by_Kjpargeter_at_Freepik.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+    .section-container {
+        background-attachment: scroll;
+    }
+}
+
+.about-me {
+    height: 100vh;
+    padding: 3em;
+}
+
+.about-me__row__underline {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px white inset;
+}
+
+.about-me__h2 {
+    font-size: 4em;
+    color: #e0dfdc;
+
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.carousel {
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    height: 80vh;
+}
+
+.carousel__icon__style {
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-item__background {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    width: 101%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item__setting {
+    position: fixed;
+    top: 84%; /*50 % for perfect centering */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item__description {
+    padding: 1em;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.portfolio__paragraph {
+    padding: 1em;
+    text-align: justify;
+    font-size: 1.8em;
+    color: white;
+}
+
+.portfolio__row__underline {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px white inset;
+}
+
+.portfolio__h2 {
+    font-size: 4em;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+.portfolio__card__picture{
+    height: 35vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
