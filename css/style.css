@@ -145,6 +145,7 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .portfolio__card__col {
     padding-top: 1em;
+    color: black;
 }
 
 .portfolio__card__picture {
@@ -200,13 +201,14 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 @media screen and (min-width: 1140px) {
-    .about-me {
+    .carousel__container-small {
+        display: none;
     }
 }
 
-@media screen and (min-width: 1140px) {
-    .carousel__container-small {
-        display: none;
+@media screen and (max-width: 1140px) {
+    .carousel__container-small__text {
+        font-size: 1.3em;
     }
 }
 
@@ -283,6 +285,6 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .contact__info {
     font-size: 1.2em;
-    padding-right: 1em;
+    padding-right: 1.5em;
     padding-top: 1em;
 }
