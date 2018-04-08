@@ -7,9 +7,28 @@ body {
     font-family: Corleone;
     font-size: 16px;
     margin: 0;
+    color: white;
     /*background: #242830;*/
 }
 
+@media screen and (max-width:576px){
+    body{
+        /*font-size: 12px;*/
+    }
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+    color: white;
+}
+
+.fa{
+    font-size: 2em;
+}
+
+.row{
+    margin:0;
+}
 /* // ------------------- NAV -------------------\\ */
 
 .navigation {
@@ -22,6 +41,7 @@ body {
     width: 100%;
     z-index: 1;
     background-color: #242830;
+    overflow: hidden;
 }
 
 .navigation__items {
@@ -74,28 +94,35 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-width: 960px) {
     .section-container {
         background-attachment: scroll;
+        background-repeat: repeat;
     }
 }
-
-.about-me {
-    height: 100vh;
-    padding: 3em;
+.container-fluid {
+    padding: 0;
 }
 
-.about-me__row__underline {
+.portfolio{
+    padding: 2em;
+}
+.portfolio__paragraph {
+    text-align: justify;
+    font-size: 1.8em;
+    color: white;
+}
+
+.portfolio__row__underline {
     height: 10px;
     border: 0;
     box-shadow: 0 10px 10px -10px white inset;
 }
 
-.about-me__h2 {
-    font-size: 4em;
+.portfolio__h2 {
+    font-size: 3em;
     color: #e0dfdc;
-
-    letter-spacing: .1em;
+    letter-spacing: .06em;
     text-shadow: 0 -1px 0 #fff,
     0 1px 0 #2e2e2e,
     0 2px 0 #2c2c2c,
@@ -114,12 +141,21 @@ body {
     0 15px 0 #121212,
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
-
-.container-fluid {
-    padding: 0;
+.portfolio__card__col{
+    padding-top:0.5em;
+}
+.portfolio__card__picture{
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio__card-text{
+    color: black;
 }
 
-.carousel {
+.about-me__carousel {
     object-fit: cover;
     overflow: hidden;
     display: flex;
@@ -152,20 +188,32 @@ body {
     font-size: 1.5em;
 }
 
-.portfolio__paragraph {
-    padding: 1em;
-    text-align: justify;
-    font-size: 1.8em;
-    color: white;
+
+.about-me {
+    padding: 2em;
 }
 
-.portfolio__row__underline {
+@media screen and (min-width: 1140px){
+    .about-me{
+    }
+}
+@media screen and (min-width:1140px){
+    .carousel__container-small{
+        display:none;
+    }
+}
+@media screen and (max-width:1139px){
+    .carousel__container-big{
+        display:none;
+    }
+}
+.about-me__row__underline {
     height: 10px;
     border: 0;
     box-shadow: 0 10px 10px -10px white inset;
 }
 
-.portfolio__h2 {
+.about-me__h2 {
     font-size: 4em;
     color: #e0dfdc;
     letter-spacing: .1em;
@@ -188,13 +236,43 @@ body {
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
+.contact{
+    background: #242830;
 }
-.portfolio__card__picture{
-    height: 35vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.contact__row{
+    padding: 2em;
+}
+.contact__picture__my-picture{
+    height: 30vh;
+    size: cover;
+    padding:2em;
+}
+
+.contact__info_h2{
+    font-size: 2.5em;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.contact__info{
+    font-size: 1.2em;
+    padding-right: 1em;
+    padding-top: 1em;
 }
